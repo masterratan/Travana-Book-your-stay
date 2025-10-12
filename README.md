@@ -1,4 +1,4 @@
-# <img src="public/images/favicon.png" alt="Travana Logo" width="40" align="center"> Travana
+# <img src="public/images/favicon.png" alt="Travana Logo" width="40" align="center"> Travana - Book your stay!
 
 [![Node.js](https://img.shields.io/badge/Node.js-18.x-green?logo=node.js)](https://nodejs.org/)  
 [![Express.js](https://img.shields.io/badge/Express.js-Backend-blue?logo=express)](https://expressjs.com/)  
