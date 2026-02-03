@@ -11,7 +11,8 @@ body {
 
 /* Navbar */
 .navbar {
-    height: 5rem;
+    min-height: 5rem;
+    height: auto;
     background-color: white;
 }
 
@@ -128,7 +129,8 @@ body {
 /* Map */
 #map { 
     height: 400px;
-    width: 80vh;
+    width: 100%;
+    max-width: 100%;
 }
 
 /* Footer link under login form */
@@ -364,6 +366,56 @@ body {
 .nav-username i {
   margin-right: 0.2rem;  /* tiny gap between icon and username */
   font-size: 0.95rem;
+}
+
+/* Navbar search responsiveness */
+.navbar-search {
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 992px) {
+  .navbar-search {
+    width: 100%;
+    margin-top: 0.75rem;
+  }
+
+  .navbar-search .search-inp {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding: 0.5rem 1.25rem;
+  }
+
+  .navbar-search .search-btn {
+    width: auto;
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+  }
+
+  .nav-username {
+    margin-left: 0;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-search {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .navbar-search .search-btn {
+    width: 100%;
+  }
+
+  .show-img {
+    height: 35vh;
+  }
+
+  .btns {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 }
 
 /* Password toggle inside input */
